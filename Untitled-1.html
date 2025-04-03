@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Genius - 智能未来</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63);
+            color: white;
+        }
+
+        .navbar {
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #00c6ff;
+        }
+
+        .hero {
+            padding: 120px 5%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #ddd;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        .cta-button {
+            padding: 15px 40px;
+            font-size: 1.1em;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            border: none;
+            border-radius: 30px;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+
+        .features {
+            padding: 80px 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-card i {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #00c6ff;
+        }
+
+        footer {
+            background: rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 30px;
+            margin-top: 100px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">AI Genius</div>
+        <div class="nav-links">
+            <a href="#home">首页</a>
+            <a href="#features">功能</a>
+            <a href="#pricing">定价</a>
+            <a href="#login">登录</a>
+            <button class="cta-button">立即体验</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>开启智能未来</h1>
+        <p>全球领先的人工智能解决方案，为您提供智能写作、图像生成、数据分析等先进AI服务</p>
+        <button class="cta-button">免费试用</button>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <i class="fas fa-robot"></i>
+            <h3>智能写作助手</h3>
+            <p>基于GPT-4架构的智能写作系统，助您高效完成各类文字创作</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-image"></i>
+            <h3>AI图像生成</h3>
+            <p>使用Stable Diffusion技术，根据文字描述生成高质量图像</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>数据分析预测</h3>
+            <p>深度学习驱动的数据分析系统，提供精准预测与商业洞察</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2023 AI Genius. All rights reserved.</p>
+        <div style="margin-top: 20px;">
+            <i class="fab fa-twitter social-icon"></i>
+            <i class="fab fa-facebook social-icon"></i>
+            <i class="fab fa-linkedin social-icon"></i>
+        </div>
+    </footer>
+</body>
+</html>
